@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Heart </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    font-family: 'Roboto', sans-serif;
+}
+</style>
+</head>
+<body>
+  
+  Nhập tên: <input type="text" id="name"> <button onclick="myFunction()">Tạo</button><br>
+  <span>Nếu là 2 tên, thì ngăn cách bằng dấu ;<br>
+  Ví dụ: "Văn A;Thị B" => Văn A &#x2665; Thị B</span>
+  <script>
+function myFunction() {
+  var name=document.getElementById('name').value
+  location.href = `/thukhoaly/heart?name=${name}`;
+}
+  </script>
+</body>
+</html>
